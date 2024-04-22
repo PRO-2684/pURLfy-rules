@@ -5,7 +5,8 @@ on:
     branches:
       - 'main'
     paths:
-      - 'cn.json'
+      - '*.json'
+      - '!*.min.json'
 
 jobs:
   push-tag:
@@ -17,20 +18,18 @@ jobs:
         uses: "actions/checkout@v4"
 
       - name: "Minify"
-        uses: StefanEnsmann/Minify-JSON-Action@1.1.0
-        with:
-          input_file: cn.json
-          output_file: cn.min.json
+        run: |
+          python ./.github/scripts/minify-json.py
+        working-directory: ./
 
       - name: "Detect Changes and Commit"
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git add test.min.json
           if git diff --staged --quiet; then
-            echo "No changes to test.min.json."
+            echo "No changes to commit."
           else
-            git commit -m "Minify test.json"
+            git commit -m "Minify JSON files."
             git push origin main
-            echo "test.min.json has been updated and changes pushed."
+            echo "Changes committed."
           fi
