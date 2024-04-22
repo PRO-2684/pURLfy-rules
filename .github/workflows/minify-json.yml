@@ -26,10 +26,11 @@ jobs:
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          # Check if the file has changed compared to the last commit
-          git diff --quiet cn.min.json || {
-            git add cn.min.json
-            git commit -m "Minify cn.json"
+          git add test.min.json
+          if git diff --staged --quiet; then
+            echo "No changes to test.min.json."
+          else
+            git commit -m "Minify test.json"
             git push origin main
-            echo "cn.min.json has been updated and changes pushed."
-          } || echo "No changes to cn.min.json."
+            echo "test.min.json has been updated and changes pushed."
+          fi
