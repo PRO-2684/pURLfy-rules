@@ -1,0 +1,35 @@
+name: "minify-json"
+
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'cn.json'
+
+jobs:
+  push-tag:
+    name: "Minify JSON"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Checkout Repository"
+        uses: "actions/checkout@v4"
+
+      - name: "Minify"
+        uses: StefanEnsmann/Minify-JSON-Action@1.1.0
+        with:
+          input_file: cn.json
+          output_file: cn.min.json
+
+      - name: "Detect Changes and Commit"
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          # Check if the file has changed compared to the last commit
+          git diff --quiet cn.min.json || {
+            git add cn.min.json
+            git commit -m "Minify cn.json"
+            git push origin main
+            echo "cn.min.json has been updated and changes pushed."
+          } || echo "No changes to cn.min.json."
