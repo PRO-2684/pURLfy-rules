@@ -56,7 +56,7 @@
 	},
 	"cn.bing.com/": {
 		"search": {
-			"description": "Bing 搜索",
+			"description": "必应搜索",
 			"mode": "white",
 			"params": [
 				"q",
@@ -64,18 +64,6 @@
 				"ensearch"
 			],
 			"author": "PRO-2684"
-		},
-		"images/": {
-			"search": {
-				"description": "Bing 搜图",
-				"mode": "white",
-				"params": [
-					"q",
-					"qft",
-					"ensearch"
-				],
-				"author": "PRO-2684"
-			}
 		}
 	},
 	"developers.weixin.qq.com/": {
@@ -538,6 +526,15 @@
 		}
 	},
 	"www.bing.com/": {
+		"search": {
+			"description": "Bing 搜索",
+			"mode": "white",
+			"params": [
+				"q",
+				"filters"
+			],
+			"author": "PRO-2684"
+		},
 		"ck/": {
 			"a": {
 				"description": "Bing 搜索结果",
