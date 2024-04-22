@@ -54,6 +54,30 @@
 			}
 		}
 	},
+	"cn.bing.com/": {
+		"search": {
+			"description": "Bing 搜索",
+			"mode": "white",
+			"params": [
+				"q",
+				"filters",
+				"ensearch"
+			],
+			"author": "PRO-2684"
+		},
+		"images/": {
+			"search": {
+				"description": "Bing 搜图",
+				"mode": "white",
+				"params": [
+					"q",
+					"qft",
+					"ensearch"
+				],
+				"author": "PRO-2684"
+			}
+		}
+	},
 	"developers.weixin.qq.com/": {
 		"community/": {
 			"middlepage/": {
@@ -518,8 +542,13 @@
 			"a": {
 				"description": "Bing 搜索结果",
 				"mode": "param",
-				"params": ["u"],
-				"decode": ["slice:2", "base64"],
+				"params": [
+					"u"
+				],
+				"decode": [
+					"slice:2",
+					"base64"
+				],
 				"author": "PRO-2684"
 			}
 		}
