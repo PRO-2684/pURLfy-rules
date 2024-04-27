@@ -523,6 +523,22 @@
 			"mode": "white",
 			"params": [],
 			"author": "PRO-2684"
+		},
+		"read/": {
+			"mobile": {
+				"description": "哔哩哔哩专栏 (移动端)",
+				"mode": "white",
+				"params": [
+					"id"
+				],
+				"author": "PRO-2684"
+			},
+			"/cv\\d+": {
+				"description": "哔哩哔哩专栏 (桌面端)",
+				"mode": "white",
+				"params": [],
+				"author": "PRO-2684"
+			}
 		}
 	},
 	"www.bing.com/": {
