@@ -6,9 +6,8 @@ Rules files for [pURLfy](https://github.com/PRO-2684/pURLfy).
 
 - [list.json](list.json): A list of all rule files.
 - [cn.json](cn.json): Chinese rules.
-- [fandom.json](fandom.json): Redirects you from Fandom wiki to official wiki.
-    - Rules are obtained from [Steve0Greatness/MovedFromFandomDB](https://github.com/Steve0Greatness/MovedFromFandomDB/blob/master/database.json)
-    - Only includes host-based redirects, so all pages will redirect to the main page of the official wiki.
+- [alternative.json](alternative.json): Redirects you from some websites to their better alternatives.
+    - Redirects you from Fandom to antifandom.
 
 ## 💖 Contributing
 
