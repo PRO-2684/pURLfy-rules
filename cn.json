@@ -301,6 +301,13 @@
 			}
 		}
 	},
+	"onw.cc/": {
+		"/.+": {
+			"description": "ONW 短链接",
+			"mode": "redirect",
+			"author": "PRO-2684"
+		}
+	},
 	"open.spotify.com/": {
 		"track": {
 			"description": "Spotify",
