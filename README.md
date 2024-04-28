@@ -6,8 +6,11 @@ Rules files for [pURLfy](https://github.com/PRO-2684/pURLfy).
 
 - [list.json](list.json): A list of all rule files.
 - [cn.json](cn.json): Chinese rules.
-- [alternative.json](alternative.json): Redirects you from some websites to their better alternatives.
-    - Redirects you from Fandom to antifandom.
+- [alternative.json](alternative.json): Redirects you from some websites to their better alternatives. Some rules are from [this script](https://greasyfork.org/scripts/483597).
+    - Redirects you from [Fandom](https://www.fandom.com/) to [antifandom](https://antifandom.com/).
+    - Redirects you from [Wikipedia](https://www.wikipedia.org/) to [Wikiwand](https://www.wikiwand.com/).
+    - Redirects you from [Reddit](https://www.reddit.com/) to [Safe Reddit](https://safereddit.com/).
+    - Redirects you from [Imgur](https://imgur.com/) to [Rimgo](https://rimgo.privacyredirect.com/).
 
 ## 💖 Contributing
 
