@@ -1,4 +1,4 @@
-name: "minify-json"
+name: "minify-and-purge"
 
 on:
   push:
@@ -9,17 +9,21 @@ on:
       - '!*.min.json'
 
 jobs:
-  push-tag:
-    name: "Minify JSON"
+  minify-and-purge:
+    name: "Minify And Purge"
     runs-on: "ubuntu-latest"
 
     steps:
       - name: "Checkout Repository"
         uses: "actions/checkout@v4"
 
-      - name: "Minify"
+      - name: "Install Dependencies"
         run: |
-          python ./.github/scripts/minify-json.py
+          python3 -m pip install -r requirements.txt
+
+      - name: "Minify JSON Files"
+        run: |
+          python3 ./.github/scripts/minify-json.py
         working-directory: ./
 
       - name: "Detect Changes and Commit"
@@ -33,3 +37,8 @@ jobs:
             git push origin main
             echo "Changes committed."
           fi
+
+      - name: "Purge jsDelivr Cache"
+        run: |
+          python3 ./.github/scripts/purge-jsdelivr.py
+        working-directory: ./
