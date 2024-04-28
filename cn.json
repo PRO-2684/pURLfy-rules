@@ -837,11 +837,25 @@
 			}
 		}
 	},
-	"www.zhihu.com": {
-		"description": "知乎",
-		"mode": "white",
-		"params": [],
-		"author": "lz233"
+	"www.zhihu.com/": {
+		"search": {
+			"description": "知乎搜索",
+			"mode": "white",
+			"params": [
+				"q",
+				"type",
+				"vertical",
+				"sort",
+				"time_interval"
+			],
+			"author": "PRO-2684"
+		},
+		"": {
+			"description": "知乎",
+			"mode": "white",
+			"params": [],
+			"author": "lz233"
+		}
 	},
 	"xie.infoq.cn/": {
 		"link": {
