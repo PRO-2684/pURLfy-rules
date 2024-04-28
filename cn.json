@@ -756,14 +756,6 @@
 			}
 		}
 	},
-	"www.reddit.com/": {
-		"r": {
-			"description": "Reddit",
-			"mode": "white",
-			"params": [],
-			"author": "Dreista"
-		}
-	},
 	"www.right.com.cn/": {
 		"forum/": {
 			"forum.php": {
