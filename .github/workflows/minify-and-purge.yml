@@ -19,7 +19,7 @@ jobs:
 
       - name: "Install Dependencies"
         run: |
-          python3 -m pip install -r requirements.txt
+          python3 -m pip install -r ./.github/scripts/requirements.txt
 
       - name: "Minify JSON Files"
         run: |
