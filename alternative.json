@@ -1,36 +1,61 @@
 {
-    "/.*\\.fandom\\.com": {
+    "/[^.]+\\.fandom\\.com": {
         "description": "Fandom Wiki",
-        "mode": "lambda",
-        "lambda": "const name = url.host.split('.')[0]; const u = new URL(`https://antifandom.com/${name}${url.pathname}`); return u;",
+        "mode": "regex",
+        "regex": [
+            "^https://([^.]+)\\.fandom\\.com/wiki/"
+        ],
+        "replace": [
+            "https://antifandom.com/$1/wiki/"
+        ],
         "author": "PRO-2684"
     },
     "wikipedia.org/": {
         "wiki": {
             "description": "Wikipedia to Wikiwand (en)",
-            "mode": "lambda",
-            "lambda": "const p = url.pathname.slice(6); return new URL(`https://www.wikiwand.com/en/${p}`);",
+            "mode": "regex",
+            "regex": [
+                "^https://wikipedia\\.org/wiki/"
+            ],
+            "replace": [
+                "https://www.wikiwand.com/en/"
+            ],
             "author": "PRO-2684"
         }
     },
-    "/.+\\.wikipedia\\.org/": {
+    "/[^.]+\\.wikipedia\\.org/": {
         "wiki": {
             "description": "Wikipedia to Wikiwand (lang)",
-            "mode": "lambda",
-            "lambda": "const lang = url.host.split('.')[0]; const p = url.pathname.slice(6); return new URL(`https://www.wikiwand.com/${lang}/${p}`);",
+            "mode": "regex",
+            "regex": [
+                "^https://([^.]+)\\.wikipedia\\.org/wiki/"
+            ],
+            "replace": [
+                "https://www.wikiwand.com/$1/"
+            ],
             "author": "PRO-2684"
         }
     },
     "www.reddit.com": {
         "description": "Reddit to Safe Reddit",
-        "mode": "lambda",
-        "lambda": "url.hostname = 'safereddit.com'; return url;",
+        "mode": "regex",
+        "regex": [
+            "^https://www\\.reddit\\.com/"
+        ],
+        "replace": [
+            "https://safereddit.com/"
+        ],
         "author": "PRO-2684"
     },
     "/.*imgur\\.com": {
         "description": "Imgur to Rimgo",
-        "mode": "lambda",
-        "lambda": "url.hostname = 'rimgo.privacyredirect.com'; return url;",
+        "mode": "regex",
+        "regex": [
+            "^https://.*imgur\\.com/"
+        ],
+        "replace": [
+            "https://rimgo.privacyredirect.com/"
+        ],
         "author": "PRO-2684"
     }
 }
