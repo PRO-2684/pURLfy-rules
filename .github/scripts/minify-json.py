@@ -37,4 +37,5 @@ if __name__ == "__main__":
         names = load(f)
         for name in names:
             minify(name)
+    minify("list")
     print("Done! 🎉")

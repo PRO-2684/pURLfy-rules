@@ -32,4 +32,5 @@ if __name__ == "__main__":
     for name in names:
         purge(name)
         sleep(1)
+    purge("list")
     print("Done! 🎉")
