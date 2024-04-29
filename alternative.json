@@ -3,7 +3,7 @@
         "description": "Fandom Wiki",
         "mode": "regex",
         "regex": [
-            "^https://([^.]+)\\.fandom\\.com/wiki/"
+            "^https?://([^.]+)\\.fandom\\.com/wiki/"
         ],
         "replace": [
             "https://antifandom.com/$1/wiki/"
@@ -15,7 +15,7 @@
             "description": "Wikipedia to Wikiwand (en)",
             "mode": "regex",
             "regex": [
-                "^https://wikipedia\\.org/wiki/"
+                "^https?://wikipedia\\.org/wiki/"
             ],
             "replace": [
                 "https://www.wikiwand.com/en/"
@@ -28,7 +28,7 @@
             "description": "Wikipedia to Wikiwand (lang)",
             "mode": "regex",
             "regex": [
-                "^https://([^.]+)\\.wikipedia\\.org/wiki/"
+                "^https?://([^.]+)\\.wikipedia\\.org/wiki/"
             ],
             "replace": [
                 "https://www.wikiwand.com/$1/"
@@ -40,7 +40,7 @@
         "description": "Reddit to Safe Reddit",
         "mode": "regex",
         "regex": [
-            "^https://www\\.reddit\\.com/"
+            "^https?://www\\.reddit\\.com/"
         ],
         "replace": [
             "https://safereddit.com/"
@@ -51,7 +51,7 @@
         "description": "Imgur to Rimgo",
         "mode": "regex",
         "regex": [
-            "^https://.*imgur\\.com/"
+            "^https?://.*imgur\\.com/"
         ],
         "replace": [
             "https://rimgo.privacyredirect.com/"
