@@ -13,8 +13,12 @@ def _purge(file):
     r = x.get(url)
     if r.status_code != 200:
         print(
-            f"Failed to purge {url}! Status code: {r.status_code}, response: {r.text}"
+            f"Unexpected status code: {r.status_code}, response: {r.text}"
         )
+    elif r.json()["status"] != "finished":
+        print(f"Failed to purge! Response: {r.text}")
+    else:
+        print("✅ Purged!")
 
 
 def purge(name):
@@ -33,4 +37,4 @@ if __name__ == "__main__":
         purge(name)
         sleep(1)
     purge("list")
-    print("Done! 🎉")
+    print("🎉 Done!")

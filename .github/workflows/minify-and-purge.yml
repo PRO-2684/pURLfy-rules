@@ -26,19 +26,28 @@ jobs:
           python3 ./.github/scripts/minify-json.py
         working-directory: ./
 
-      - name: "Detect Changes and Commit"
+      - name: "Detect Changes"
+        id: "detect-changes"
+        run: |
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Changes detected."
+          fi
+
+      - name: "Commit"
+        if: ${{ steps.detect-changes.outputs.changed == 'true' }}
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Minify JSON files."
-            git push origin main
-            echo "Changes committed."
-          fi
+          git commit -m "Minify JSON files."
+          git push origin main
+          echo "Changes committed."
 
       - name: "Purge jsDelivr Cache"
+        if: ${{ steps.detect-changes.outputs.changed == 'true' }}
         run: |
           python3 ./.github/scripts/purge-jsdelivr.py
         working-directory: ./
