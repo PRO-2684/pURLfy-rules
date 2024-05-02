@@ -8,7 +8,7 @@ x = Session()
 
 
 def _purge(file):
-    url = f"https://purge.jsdelivr.net/gh/{GH_REPO}@latest/{file}"
+    url = f"https://purge.jsdelivr.net/gh/{GH_REPO}@core-0.3.x/{file}"
     print(f'Purging "{url}"...')
     r = x.get(url)
     if r.status_code != 200:
