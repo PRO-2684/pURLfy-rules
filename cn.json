@@ -428,6 +428,14 @@
 			"author": "青墨"
 		}
 	},
+	"t.cn/": {
+		"/.+": {
+			"description": "微博短链",
+			"mode": "visit",
+			"acts": ["dom", "sel:.open-url a", "attr:href"],
+			"author": "PRO-2684"
+		}
+	},
 	"t.co": {
 		"description": "Twitter 短链",
 		"mode": "redirect",
@@ -565,7 +573,7 @@
 				"params": [
 					"u"
 				],
-				"decode": [
+				"acts": [
 					"slice:2",
 					"base64"
 				],
