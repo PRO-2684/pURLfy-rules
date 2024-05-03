@@ -1,5 +1,7 @@
 # pURLfy-rules
 
+[![jsDelivr hits](https://data.jsdelivr.com/v1/package/gh/PRO-2684/pURLfy-rules/badge)](https://www.jsdelivr.com/package/gh/PRO-2684/pURLfy-rules?tab=stats)
+
 Rules files for [pURLfy](https://github.com/PRO-2684/pURLfy).
 
 ## 📃 Files
