@@ -3,7 +3,7 @@ name: "minify-and-purge"
 on:
   push:
     branches:
-      - 'main'
+      - 'core-0.3.x'
     paths:
       - '*.json'
       - '!*.min.json'
