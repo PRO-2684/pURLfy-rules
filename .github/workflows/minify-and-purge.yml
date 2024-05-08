@@ -43,7 +43,7 @@ jobs:
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
           git commit -m "Minify JSON files."
-          git push origin main
+          git push origin ${{ github.ref_name }}
           echo "Changes committed."
 
       - name: "Purge jsDelivr Cache"
