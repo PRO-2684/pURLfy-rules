@@ -61,7 +61,8 @@
 			"params": [
 				"q",
 				"filters",
-				"ensearch"
+				"ensearch",
+				"first"
 			],
 			"author": "PRO-2684"
 		}
@@ -562,7 +563,8 @@
 			"mode": "white",
 			"params": [
 				"q",
-				"filters"
+				"filters",
+				"first"
 			],
 			"author": "PRO-2684"
 		},
