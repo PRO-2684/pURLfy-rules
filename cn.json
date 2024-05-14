@@ -667,7 +667,8 @@
 				"as_qdr",
 				"as_sitesearch",
 				"as_occt",
-				"as_filetype"
+				"as_filetype",
+				"nfpr"
 			],
 			"author": "MateChan, PRO-2684"
 		}
