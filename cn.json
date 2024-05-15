@@ -194,6 +194,15 @@
 			"author": "PRO-2684"
 		}
 	},
+	"link.segmentfault.com": {
+		"description": "思否外链",
+		"mode": "visit",
+		"headers": {
+			"Referer": "https://segmentfault.com/"
+		},
+		"acts": ["dom", "sel:body", "attr:data-url"],
+		"author": "PRO-2684"
+	},
 	"link.uisdc.com": {
 		"description": "优设网外链",
 		"mode": "param",
@@ -305,6 +314,13 @@
 	"onw.cc/": {
 		"/.+": {
 			"description": "ONW 短链接",
+			"mode": "redirect",
+			"author": "PRO-2684"
+		}
+	},
+	"ourl.co/": {
+		"/.+": {
+			"description": "蓝点网短网址",
 			"mode": "redirect",
 			"author": "PRO-2684"
 		}
