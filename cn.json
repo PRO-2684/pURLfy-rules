@@ -806,6 +806,17 @@
 			}
 		}
 	},
+	"www.spigotmc.org": {
+		"description": "Spigotmc",
+		"mode": "regex",
+		"regex": [
+			"^https?://www\\.spigotmc\\.org/([^.]+)/([^.]+)\\.((?<=\\.)\\d+)"
+		],
+		"replace": [
+			"https://www.spigotmc.org/$1/$3"
+		],
+		"author": "jhqwqmc"
+	},
 	"www.tianyancha.com/": {
 		"security": {
 			"description": "天眼查外链",
