@@ -437,6 +437,20 @@
 			"author": "OldPanda"
 		}
 	},
+	"support.qq.com/": {
+		"products/": {
+			"/\\d+/": {
+				"link-jump": {
+					"description": "腾讯兔小巢外链",
+					"mode": "param",
+					"params": [
+						"jump"
+					],
+					"author": "oneNorth7"
+				}
+			}
+		}
+	},
 	"t.bilibili.com/": {
 		"/^\\d+$": {
 			"description": "哔哩哔哩动态分享",
@@ -930,5 +944,15 @@
 		"mode": "white",
 		"params": [],
 		"author": "TCOTC"
+	},
+	"/jump\\d*.bdimg.com/": {
+		"safecheck/": {
+			"index": {
+				"description": "百度外链",
+				"mode": "visit",
+				"acts": ["dom", "sel:.link", "text"],
+				"author": "PRO-2684"
+			}
+		}
 	}
 }
