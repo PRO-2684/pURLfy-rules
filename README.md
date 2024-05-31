@@ -30,6 +30,7 @@ If you want to add a new rule file, in addition to creating a new `*.json` file,
 
 ## 🎉 Acknowledgments
 
-- Thanks to [this script](https://greasyfork.org/scripts/412612) on GreasyFork for providing some rules for pURLfy.
-- Thanks to [LinkHelper](https://github.com/oneNorth7/LinkHelper) for providing some rules for pURLfy.
+- Thanks to [Tarnhelm](https://tarnhelm.project.ac.cn/) for providing some rules.
+- Thanks to [this script](https://greasyfork.org/scripts/412612) on GreasyFork for providing some rules.
+- Thanks to [LinkHelper](https://github.com/oneNorth7/LinkHelper) for providing some rules.
 - Thanks to [SearXNG](https://github.com/searxng/searxng/blob/f1a148f53e9fbd10e95baa442b40327732259f25/searx/engines/bing.py#L148) for providing Bing's purification rule.
