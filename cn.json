@@ -65,6 +65,14 @@
 				"first"
 			],
 			"author": "PRO-2684"
+		},
+		"": {
+			"description": "必应 FallBack",
+			"mode": "black",
+			"params": [
+				"FORM"
+			],
+			"author": "PRO-2684"
 		}
 	},
 	"developers.weixin.qq.com/": {
@@ -272,6 +280,14 @@
 				"itemsId"
 			],
 			"author": "青墨"
+		}
+	},
+	"mobile.qzone.qq.com/": {
+		"l": {
+			"description": "手机 QQ 空间分享",
+			"mode": "visit",
+			"acts": [],
+			"author": "PRO-2684"
 		}
 	},
 	"mp.weixin.qq.com/": {
@@ -613,6 +629,14 @@
 				],
 				"author": "PRO-2684"
 			}
+		},
+		"": {
+			"description": "Bing FallBack",
+			"mode": "black",
+			"params": [
+				"FORM"
+			],
+			"author": "PRO-2684"
 		}
 	},
 	"www.chinaz.com/": {
