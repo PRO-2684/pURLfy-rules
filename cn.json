@@ -585,7 +585,9 @@
 		"video": {
 			"description": "哔哩哔哩视频",
 			"mode": "white",
-			"params": [],
+			"params": [
+				"t"
+			],
 			"author": "PRO-2684"
 		},
 		"read/": {
