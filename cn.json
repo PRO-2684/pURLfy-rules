@@ -32,6 +32,12 @@
 			"mode": "white",
 			"params": [],
 			"author": "PRO-2684"
+		},
+		"reference": {
+			"description": "百度百科参考文献",
+			"mode": "white",
+			"params": [],
+			"author": "PRO-2684"
 		}
 	},
 	"bit.ly": {
