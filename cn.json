@@ -26,6 +26,14 @@
 		"mode": "redirect",
 		"author": "PRO-2684"
 	},
+	"baike.baidu.com/": {
+		"item": {
+			"description": "百度百科",
+			"mode": "white",
+			"params": [],
+			"author": "PRO-2684"
+		}
+	},
 	"bit.ly": {
 		"description": "Bitly",
 		"mode": "redirect",
