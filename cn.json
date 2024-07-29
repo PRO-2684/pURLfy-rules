@@ -259,6 +259,14 @@
 			"author": "青墨"
 		}
 	},
+	"m.bilibili.com": {
+		"description": "哔哩哔哩移动端",
+		"mode": "regex",
+		"regex": ["^https?://m\\.bilibili\\.com"],
+		"replace": ["https://www.bilibili.com"],
+		"continue": true,
+		"author": "PRO-2684"
+	},
 	"m.tb.cn": {
 		"description": "淘宝/闲鱼",
 		"mode": "white",
@@ -743,6 +751,14 @@
 				"nfpr"
 			],
 			"author": "MateChan, PRO-2684"
+		},
+		"url": {
+			"description": "Google 外链",
+			"mode": "param",
+			"params": [
+				"url"
+			],
+			"author": "PRO-2684"
 		}
 	},
 	"www.instagram.com/": {
