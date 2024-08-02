@@ -304,14 +304,6 @@
 			"author": "青墨"
 		}
 	},
-	"mobile.qzone.qq.com/": {
-		"l": {
-			"description": "手机 QQ 空间分享",
-			"mode": "visit",
-			"acts": [],
-			"author": "PRO-2684"
-		}
-	},
 	"mp.weixin.qq.com/": {
 		"s": {
 			"description": "微信公众号文章",
@@ -1001,12 +993,21 @@
 		"params": [],
 		"author": "TCOTC"
 	},
-	"/jump\\d*.bdimg.com/": {
+	"/jump\\d*\\.bdimg\\.com/": {
 		"safecheck/": {
 			"index": {
 				"description": "百度外链",
 				"mode": "visit",
 				"acts": ["dom", "sel:.link", "text"],
+				"author": "PRO-2684"
+			}
+		}
+	},
+	"/.+\\.list-manage\\.com/": {
+		"track/": {
+			"click": {
+				"description": "MailChimp",
+				"mode": "redirect",
 				"author": "PRO-2684"
 			}
 		}
