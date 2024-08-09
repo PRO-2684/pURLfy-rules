@@ -1110,16 +1110,6 @@
 			"author": "OldPanda"
 		}
 	},
-	"www.urlshare.cn/": {
-		"umirror_url_check": {
-			"description": "URLShare 外链",
-			"mode": "param",
-			"params": [
-				"url"
-			],
-			"author": "PRO-2684"
-		}
-	},
 	"www.xiaohongshu.com/": {
 		"discovery/": {
 			"item": {
@@ -1232,6 +1222,16 @@
 				"acts": ["dom", "sel:.link", "text"],
 				"author": "PRO-2684"
 			}
+		}
+	},
+	"/.*\\.urlshare\\.cn/": {
+		"umirror_url_check": {
+			"description": "URLShare 外链",
+			"mode": "param",
+			"params": [
+				"url"
+			],
+			"author": "PRO-2684"
 		}
 	},
 	"/.+\\.list-manage\\.com/": {
