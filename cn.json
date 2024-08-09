@@ -7,9 +7,41 @@
 			"utm_medium",
 			"utm_campaign",
 			"utm_term",
-			"utm_content"
+			"utm_content",
+			"mc_cid",
+			"mc_eid"
 		],
 		"author": "PRO-2684"
+	},
+	"51.ruyo.net/": {
+		"go/": {
+			"index.html": {
+				"description": "如有外链",
+				"mode": "param",
+				"params": [
+					"u"
+				],
+				"author": "Leon406"
+			}
+		}
+	},
+	"outgoing.prod.mozaws.net/": {
+		"/v\\d/": {
+			"/\\w+": {
+				"description": "Mozilla 外链",
+				"mode": "regex",
+				"regex": [
+					"^https?://outgoing\\.prod\\.mozaws\\.net/v\\d/\\w+/(.+)"
+				],
+				"replace": [
+					"$1"
+				],
+				"acts": [
+					"url"
+				],
+				"author": "Meriel Varen"
+			}
+		}
 	},
 	"afdian.net/": {
 		"link": {
@@ -19,6 +51,16 @@
 				"target"
 			],
 			"author": "OldPanda"
+		}
+	},
+	"app.yinxiang.com/": {
+		"OutboundRedirect.action": {
+			"description": "印象笔记外链",
+			"mode": "param",
+			"params": [
+				"dest"
+			],
+			"author": "Meriel Varen"
 		}
 	},
 	"b23.tv": {
@@ -44,6 +86,19 @@
 		"description": "Bitly",
 		"mode": "redirect",
 		"author": "PRO-2684"
+	},
+	"blog.51cto.com/": {
+		"transfer": {
+			"description": "51CTO 外链",
+			"mode": "regex",
+			"regex": [
+				"^https?://blog.51cto.com/transfer\\?(.*)"
+			],
+			"replace": [
+				"$1"
+			],
+			"author": "PRO-2684"
+		}
 	},
 	"c.pc.qq.com": {
 		"description": "QQ 外链",
@@ -125,6 +180,16 @@
 			"author": "OldPanda"
 		}
 	},
+	"getpocket.com/": {
+		"redirect": {
+			"description": "Pocket 外链",
+			"mode": "param",
+			"params": [
+				"url"
+			],
+			"author": "Meriel Varen"
+		}
+	},
 	"gitee.com/": {
 		"link": {
 			"description": "Gitee 外链",
@@ -146,6 +211,16 @@
 				],
 				"author": "PRO-2684"
 			}
+		}
+	},
+	"infoq.cn/": {
+		"link": {
+			"description": "InfoQ 外链",
+			"mode": "param",
+			"params": [
+				"target"
+			],
+			"author": "Meriel Varen"
 		}
 	},
 	"k.youshop10.com": {
@@ -181,6 +256,14 @@
 			"target"
 		],
 		"author": "OldPanda"
+	},
+	"link.jianshu.com": {
+		"description": "简书外链",
+		"mode": "param",
+		"params": [
+			"t"
+		],
+		"author": "Meriel Varen"
 	},
 	"link.juejin.cn": {
 		"description": "掘金外链",
@@ -262,8 +345,12 @@
 	"m.bilibili.com": {
 		"description": "哔哩哔哩移动端",
 		"mode": "regex",
-		"regex": ["^https?://m\\.bilibili\\.com"],
-		"replace": ["https://www.bilibili.com"],
+		"regex": [
+			"^https?://m\\.bilibili\\.com"
+		],
+		"replace": [
+			"https://www.bilibili.com"
+		],
 		"continue": true,
 		"author": "PRO-2684"
 	},
@@ -293,6 +380,20 @@
 			}
 		}
 	},
+	"mailchi.mp": {
+		"description": "Mailchimp",
+		"mode": "black",
+		"params": [
+			"e",
+			"u",
+			"utm_source",
+			"utm_medium",
+			"utm_campaign",
+			"utm_term",
+			"utm_content"
+		],
+		"author": "PRO-2684"
+	},
 	"mall.bilibili.com/": {
 		"detail.html": {
 			"description": "会员购分享",
@@ -317,6 +418,17 @@
 				"previewkey"
 			],
 			"author": "PRO-2684"
+		},
+		"mp/": {
+			"appmsgalbum": {
+				"description": "微信公众号专辑",
+				"mode": "white",
+				"params": [
+					"action",
+					"album_id"
+				],
+				"author": "PRO-2684"
+			}
 		}
 	},
 	"music.163.com/": {
@@ -428,6 +540,16 @@
 		],
 		"author": "PRO-2684"
 	},
+	"so.com/": {
+		"link": {
+			"description": "360 搜索外链",
+			"mode": "param",
+			"params": [
+				"url"
+			],
+			"author": "PRO-2684"
+		}
+	},
 	"space.bilibili.com/": {
 		"/^\\d+$": {
 			"description": "个人界面分享",
@@ -469,7 +591,7 @@
 	},
 	"support.qq.com/": {
 		"products/": {
-			"/\\d+/": {
+			"/^\\d+$/": {
 				"link-jump": {
 					"description": "腾讯兔小巢外链",
 					"mode": "param",
@@ -477,6 +599,18 @@
 						"jump"
 					],
 					"author": "oneNorth7"
+				}
+			}
+		},
+		"embed/": {
+			"phone/": {
+				"/^\\d+$/": {
+					"description": "腾讯兔小巢外链",
+					"mode": "param",
+					"params": [
+						"jump"
+					],
+					"author": "PRO-2684"
 				}
 			}
 		}
@@ -573,6 +707,16 @@
 			"author": "OldPanda"
 		}
 	},
+	"www.baidu.com/": {
+		"link": {
+			"description": "百度外链",
+			"mode": "param",
+			"params": [
+				"url"
+			],
+			"author": "Meriel Varen"
+		}
+	},
 	"www.baike.com/": {
 		"redirect_link": {
 			"description": "抖音百科外链",
@@ -619,6 +763,12 @@
 				"params": [],
 				"author": "PRO-2684"
 			}
+		},
+		"opus": {
+			"description": "哔哩哔哩动态",
+			"mode": "white",
+			"params": [],
+			"author": "PRO-2684"
 		}
 	},
 	"www.bing.com/": {
@@ -717,7 +867,25 @@
 			"author": "OldPanda"
 		}
 	},
+	"www.evernote.com/": {
+		"OutboundRedirect.action": {
+			"description": "Evernote 外链",
+			"mode": "param",
+			"params": [
+				"dest"
+			],
+			"author": "Meriel Varen"
+		}
+	},
 	"www.google.com/": {
+		"imgres": {
+			"description": "Google 图片搜索结果外链",
+			"mode": "param",
+			"params": [
+				"imgurl"
+			],
+			"author": "PRO-2684"
+		},
 		"search": {
 			"description": "Google Search",
 			"mode": "white",
@@ -748,9 +916,10 @@
 			"description": "Google 外链",
 			"mode": "param",
 			"params": [
-				"url"
+				"url",
+				"q"
 			],
-			"author": "PRO-2684"
+			"author": "PRO-2684, Meriel Varen"
 		}
 	},
 	"www.instagram.com/": {
@@ -771,6 +940,30 @@
 				"url"
 			],
 			"author": "OldPanda"
+		}
+	},
+	"www.jobui.com/": {
+		"tips/": {
+			"redirect.php": {
+				"description": "职友集外链",
+				"mode": "param",
+				"params": [
+					"link"
+				],
+				"author": "PRO-2684"
+			}
+		}
+	},
+	"www.kdocs.cn/": {
+		"office/": {
+			"link": {
+				"description": "金山文档外链",
+				"mode": "param",
+				"params": [
+					"target"
+				],
+				"author": "Meriel Varen"
+			}
 		}
 	},
 	"www.kookapp.cn/": {
@@ -843,6 +1036,14 @@
 			}
 		}
 	},
+	"www.pc6.com/": {
+		"goread.html": {
+			"description": "PC6 外链",
+			"mode": "lambda",
+			"lambda": "const encoded = url.searchParams.get('gourl'); const key = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'; const len = key.length; let d = 0; let s = new Array(Math.floor(encoded.length / 3)); const b = s.length; for (let i = 0; i < b; i++) { const b1 = key.indexOf(encoded.charAt(d++)); const b2 = key.indexOf(encoded.charAt(d++)); const b3 = key.indexOf(encoded.charAt(d++)); s[i] = b1 * len * len + b2 * len + b3; } const decoded = String.fromCharCode(...s); return new URL(decoded);",
+			"author": "PRO-2684"
+		}
+	},
 	"www.qcc.com/": {
 		"web/": {
 			"transfer-link": {
@@ -866,6 +1067,26 @@
 				],
 				"author": "ous50"
 			}
+		}
+	},
+	"www.so.com/": {
+		"link": {
+			"description": "360 搜索外链",
+			"mode": "param",
+			"params": [
+				"url"
+			],
+			"author": "PRO-2684"
+		}
+	},
+	"www.sogou.com/": {
+		"link": {
+			"description": "搜狗搜索外链",
+			"mode": "param",
+			"params": [
+				"url"
+			],
+			"author": "Meriel Varen"
 		}
 	},
 	"www.spigotmc.org": {
@@ -967,6 +1188,16 @@
 				"target"
 			],
 			"author": "OldPanda"
+		}
+	},
+	"xueshu.baidu.com/": {
+		"s": {
+			"description": "百度学术外链",
+			"mode": "param",
+			"params": [
+				"sc_vurl"
+			],
+			"author": "PRO-2684"
 		}
 	},
 	"y.music.163.com/": {
