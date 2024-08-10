@@ -1,5 +1,7 @@
 # pURLfy-rules
 
+English | [简体中文](README_zh.md)
+
 [![jsDelivr hits](https://data.jsdelivr.com/v1/package/gh/PRO-2684/pURLfy-rules/badge?style=rounded)](https://www.jsdelivr.com/package/gh/PRO-2684/pURLfy-rules?tab=stats)
 
 Rules files for [pURLfy](https://github.com/PRO-2684/pURLfy).
@@ -10,7 +12,7 @@ Rules files for [pURLfy](https://github.com/PRO-2684/pURLfy).
 - [tracking.json](tracking.json): Rules for purifying tracking links.
 - [outgoing.json](outgoing.json): Rules for purifying outgoing links.
 - [shortener.json](shortener.json): Rules for restoring shortened links.
-- [alternative.json](alternative.json): Redirects you from some websites to their better alternatives. Some rules are from [this script](https://greasyfork.org/scripts/483597).
+- [alternative.json](alternative.json): Redirects you from some websites to their better alternatives.
     - Redirects you from [Fandom](https://www.fandom.com/) to [antifandom](https://antifandom.com/).
     - Redirects you from [Wikipedia](https://www.wikipedia.org/) to [Wikiwand](https://www.wikiwand.com/).
     - Redirects you from [Reddit](https://www.reddit.com/) to [Safe Reddit](https://safereddit.com/).
@@ -35,6 +37,9 @@ If you want to add a new rule file, in addition to creating a new `*.json` file,
 ## 🎉 Acknowledgments
 
 - Thanks to [Tarnhelm](https://tarnhelm.project.ac.cn/) for providing some rules.
-- Thanks to [this script](https://greasyfork.org/scripts/412612) on GreasyFork for providing some rules.
+- Thanks to these scripts on GreasyFork for providing some rules.
+    - [412612](https://greasyfork.org/scripts/412612)
+    - [483475](https://greasyfork.org/scripts/483475)
+    - [483597](https://greasyfork.org/scripts/483597)
 - Thanks to [LinkHelper](https://github.com/oneNorth7/LinkHelper) for providing some rules.
 - Thanks to [SearXNG](https://github.com/searxng/searxng/blob/f1a148f53e9fbd10e95baa442b40327732259f25/searx/engines/bing.py#L148) for providing Bing's purification rule.
