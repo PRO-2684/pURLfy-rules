@@ -1,19 +1,5 @@
 {
-	"": {
-		"description": "Fallback",
-		"mode": "black",
-		"params": [
-			"utm_source",
-			"utm_medium",
-			"utm_campaign",
-			"utm_term",
-			"utm_content",
-			"mc_cid",
-			"mc_eid"
-		],
-		"author": "PRO-2684"
-	},
-	"51.ruyo.net/": {
+    "51.ruyo.net/": {
 		"go/": {
 			"index.html": {
 				"description": "如有外链",
@@ -25,7 +11,7 @@
 			}
 		}
 	},
-	"outgoing.prod.mozaws.net/": {
+    "outgoing.prod.mozaws.net/": {
 		"/v\\d/": {
 			"/\\w+": {
 				"description": "Mozilla 外链",
@@ -63,30 +49,6 @@
 			"author": "Meriel Varen"
 		}
 	},
-	"b23.tv": {
-		"description": "哔哩哔哩短链",
-		"mode": "redirect",
-		"author": "PRO-2684"
-	},
-	"baike.baidu.com/": {
-		"item": {
-			"description": "百度百科",
-			"mode": "white",
-			"params": [],
-			"author": "PRO-2684"
-		},
-		"reference": {
-			"description": "百度百科参考文献",
-			"mode": "white",
-			"params": [],
-			"author": "PRO-2684"
-		}
-	},
-	"bit.ly": {
-		"description": "Bitly",
-		"mode": "redirect",
-		"author": "PRO-2684"
-	},
 	"blog.51cto.com/": {
 		"transfer": {
 			"description": "51CTO 外链",
@@ -121,27 +83,6 @@
 					"author": "OldPanda"
 				}
 			}
-		}
-	},
-	"cn.bing.com/": {
-		"search": {
-			"description": "必应搜索",
-			"mode": "white",
-			"params": [
-				"q",
-				"filters",
-				"ensearch",
-				"first"
-			],
-			"author": "PRO-2684"
-		},
-		"": {
-			"description": "必应 FallBack",
-			"mode": "black",
-			"params": [
-				"FORM"
-			],
-			"author": "PRO-2684"
 		}
 	},
 	"developers.weixin.qq.com/": {
@@ -193,55 +134,6 @@
 	"gitee.com/": {
 		"link": {
 			"description": "Gitee 外链",
-			"mode": "param",
-			"params": [
-				"target"
-			],
-			"author": "PRO-2684"
-		}
-	},
-	"h5.qzone.qq.com/": {
-		"ugc/": {
-			"share": {
-				"description": "h5 QQ 空间",
-				"mode": "white",
-				"params": [
-					"sharetag",
-					"appid"
-				],
-				"author": "PRO-2684"
-			}
-		}
-	},
-	"infoq.cn/": {
-		"link": {
-			"description": "InfoQ 外链",
-			"mode": "param",
-			"params": [
-				"target"
-			],
-			"author": "Meriel Varen"
-		}
-	},
-	"k.youshop10.com": {
-		"description": "微店",
-		"mode": "white",
-		"params": [],
-		"author": "kirito"
-	},
-	"kandianshare.html5.qq.com/": {
-		"v2/": {
-			"news": {
-				"description": "QQ 看点分享",
-				"mode": "white",
-				"params": [],
-				"author": "PRO-2684"
-			}
-		}
-	},
-	"leetcode.cn/": {
-		"link": {
-			"description": "LeetCode 外链",
 			"mode": "param",
 			"params": [
 				"target"
@@ -334,40 +226,6 @@
 			"author": "PRO-2684"
 		}
 	},
-	"live.bilibili.com/": {
-		"/^\\d+$": {
-			"description": "哔哩哔哩直播间",
-			"mode": "white",
-			"params": [],
-			"author": "青墨"
-		}
-	},
-	"m.bilibili.com": {
-		"description": "哔哩哔哩移动端",
-		"mode": "regex",
-		"regex": [
-			"^https?://m\\.bilibili\\.com"
-		],
-		"replace": [
-			"https://www.bilibili.com"
-		],
-		"continue": true,
-		"author": "PRO-2684"
-	},
-	"m.tb.cn": {
-		"description": "淘宝/闲鱼",
-		"mode": "white",
-		"params": [],
-		"author": "lz233"
-	},
-	"m.v.qq.com": {
-		"description": "腾讯视频",
-		"mode": "white",
-		"params": [
-			"vid"
-		],
-		"author": "returnL、青墨"
-	},
 	"mail.qq.com/": {
 		"cgi-bin/": {
 			"readtemplate": {
@@ -377,124 +235,6 @@
 					"gourl"
 				],
 				"author": "OldPanda"
-			}
-		}
-	},
-	"mailchi.mp": {
-		"description": "Mailchimp",
-		"mode": "black",
-		"params": [
-			"e",
-			"u",
-			"utm_source",
-			"utm_medium",
-			"utm_campaign",
-			"utm_term",
-			"utm_content"
-		],
-		"author": "PRO-2684"
-	},
-	"mall.bilibili.com/": {
-		"detail.html": {
-			"description": "会员购分享",
-			"mode": "white",
-			"params": [
-				"noTitleBar",
-				"itemsId"
-			],
-			"author": "青墨"
-		}
-	},
-	"mp.weixin.qq.com/": {
-		"s": {
-			"description": "微信公众号文章",
-			"mode": "white",
-			"params": [
-				"__biz",
-				"mid",
-				"idx",
-				"sn",
-				"tempkey",
-				"previewkey"
-			],
-			"author": "PRO-2684"
-		},
-		"mp/": {
-			"appmsgalbum": {
-				"description": "微信公众号专辑",
-				"mode": "white",
-				"params": [
-					"action",
-					"album_id"
-				],
-				"author": "PRO-2684"
-			}
-		}
-	},
-	"music.163.com/": {
-		"#/": {
-			"song": {
-				"description": "网易云音乐",
-				"mode": "white",
-				"params": [
-					"id"
-				],
-				"author": "lz233"
-			}
-		}
-	},
-	"music.apple.com/": {
-		"jp/": {
-			"album": {
-				"description": "Apple Music",
-				"mode": "white",
-				"params": [],
-				"author": "mitian233"
-			}
-		}
-	},
-	"onw.cc/": {
-		"/.+": {
-			"description": "ONW 短链接",
-			"mode": "redirect",
-			"author": "PRO-2684"
-		}
-	},
-	"ourl.co/": {
-		"/.+": {
-			"description": "蓝点网短网址",
-			"mode": "redirect",
-			"author": "PRO-2684"
-		}
-	},
-	"open.spotify.com/": {
-		"track": {
-			"description": "Spotify",
-			"mode": "white",
-			"params": [],
-			"author": "lz233"
-		}
-	},
-	"plat-miniapp.zuoyebang.com": {
-		"description": "作业帮",
-		"mode": "white",
-		"params": [
-			"cuid",
-			"ishit"
-		],
-		"author": "omg-xtao"
-	},
-	"qun.qq.com/": {
-		"qqweb/": {
-			"qunpro/": {
-				"share": {
-					"description": "QQ 频道",
-					"mode": "white",
-					"params": [
-						"inviteCode"
-					],
-					"author": "青墨"
-				}
 			}
 		}
 	},
@@ -532,14 +272,6 @@
 			}
 		}
 	},
-	"search.bilibili.com": {
-		"description": "哔哩哔哩搜索",
-		"mode": "white",
-		"params": [
-			"keyword"
-		],
-		"author": "PRO-2684"
-	},
 	"so.com/": {
 		"link": {
 			"description": "360 搜索外链",
@@ -550,14 +282,6 @@
 			"author": "PRO-2684"
 		}
 	},
-	"space.bilibili.com/": {
-		"/^\\d+$": {
-			"description": "个人界面分享",
-			"mode": "white",
-			"params": [],
-			"author": "青墨"
-		}
-	},
 	"sspai.com/": {
 		"link": {
 			"description": "少数派外链",
@@ -566,16 +290,6 @@
 				"target"
 			],
 			"author": "OldPanda"
-		}
-	},
-	"static-play.kg.qq.com/": {
-		"node": {
-			"description": "全民k歌",
-			"mode": "white",
-			"params": [
-				"s"
-			],
-			"author": "青墨"
 		}
 	},
 	"steamcommunity.com/": {
@@ -615,30 +329,6 @@
 			}
 		}
 	},
-	"t.bilibili.com/": {
-		"/^\\d+$": {
-			"description": "哔哩哔哩动态分享",
-			"mode": "white",
-			"params": [],
-			"author": "青墨"
-		}
-	},
-	"t.cn/": {
-		"/.+": {
-			"description": "微博短链",
-			"mode": "visit",
-			"acts": ["dom", "sel:.open-url a", "attr:href"],
-			"author": "PRO-2684"
-		}
-	},
-	"t.co": {
-		"description": "Twitter 短链",
-		"mode": "redirect",
-		"headers": {
-			"User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
-		},
-		"author": "PRO-2684"
-	},
 	"t.me/": {
 		"iv": {
 			"description": "Telegram 外链",
@@ -661,20 +351,7 @@
 					"author": "OldPanda"
 				}
 			}
-		},
-		"p/": {
-			"/^\\d+$": {
-				"description": "百度贴吧",
-				"mode": "white",
-				"params": [],
-				"author": "青墨"
-			}
 		}
-	},
-	"tinyurl.com": {
-		"description": "TinyURL",
-		"mode": "redirect",
-		"author": "PRO-2684"
 	},
 	"weibo.cn/": {
 		"sinaurl": {
@@ -685,16 +362,6 @@
 				"toasturl"
 			],
 			"author": "PRO-2684"
-		}
-	},
-	"weread.qq.com/": {
-		"book-detail": {
-			"description": "微信读书",
-			"mode": "white",
-			"params": [
-				"v"
-			],
-			"author": "lz233"
 		}
 	},
 	"www.360doc.cn/": {
@@ -727,84 +394,6 @@
 			"author": "OldPanda"
 		}
 	},
-	"www.bilibili.com/": {
-		"h5/": {
-			"lottery/": {
-				"result": {
-					"description": "哔哩哔哩预约分享",
-					"mode": "black",
-					"params": [
-						"i_transfer_match"
-					],
-					"author": "青墨"
-				}
-			}
-		},
-		"video": {
-			"description": "哔哩哔哩视频",
-			"mode": "white",
-			"params": [
-				"t"
-			],
-			"author": "PRO-2684"
-		},
-		"read/": {
-			"mobile": {
-				"description": "哔哩哔哩专栏 (移动端)",
-				"mode": "white",
-				"params": [
-					"id"
-				],
-				"author": "PRO-2684"
-			},
-			"/cv\\d+": {
-				"description": "哔哩哔哩专栏 (桌面端)",
-				"mode": "white",
-				"params": [],
-				"author": "PRO-2684"
-			}
-		},
-		"opus": {
-			"description": "哔哩哔哩动态",
-			"mode": "white",
-			"params": [],
-			"author": "PRO-2684"
-		}
-	},
-	"www.bing.com/": {
-		"search": {
-			"description": "Bing 搜索",
-			"mode": "white",
-			"params": [
-				"q",
-				"filters",
-				"first"
-			],
-			"author": "PRO-2684"
-		},
-		"ck/": {
-			"a": {
-				"description": "Bing 搜索结果",
-				"mode": "param",
-				"params": [
-					"u"
-				],
-				"acts": [
-					"slice:2",
-					"base64"
-				],
-				"author": "PRO-2684"
-			}
-		},
-		"": {
-			"description": "Bing FallBack",
-			"mode": "black",
-			"params": [
-				"FORM"
-			],
-			"author": "PRO-2684"
-		}
-	},
 	"www.chinaz.com/": {
 		"go.shtml": {
 			"description": "站长之家外链",
@@ -835,29 +424,7 @@
 			"author": "PRO-2684"
 		}
 	},
-	"www.disneyplus.com": {
-		"description": "Disney+",
-		"mode": "white",
-		"params": [],
-		"author": "mitian233"
-	},
-	"www.dlsite.com": {
-		"description": "DLsite",
-		"mode": "white",
-		"params": [],
-		"author": "MateChan"
-	},
 	"www.douban.com/": {
-		"group/": {
-			"topic/": {
-				"/^\\d+$": {
-					"description": "豆瓣小组",
-					"mode": "white",
-					"params": [],
-					"author": "ChellyL"
-				}
-			}
-		},
 		"link2": {
 			"description": "豆瓣外链",
 			"mode": "param",
@@ -885,32 +452,6 @@
 				"imgurl"
 			],
 			"author": "PRO-2684"
-		},
-		"search": {
-			"description": "Google Search",
-			"mode": "white",
-			"params": [
-				"q",
-				"start",
-				"lr",
-				"tbs",
-				"udm",
-				"tbm",
-				"as_q",
-				"as_epq",
-				"as_oq",
-				"as_eq",
-				"as_nlo",
-				"as_nhi",
-				"lr",
-				"cr",
-				"as_qdr",
-				"as_sitesearch",
-				"as_occt",
-				"as_filetype",
-				"nfpr"
-			],
-			"author": "MateChan, PRO-2684"
 		},
 		"url": {
 			"description": "Google 外链",
@@ -1008,12 +549,6 @@
 			"author": "PRO-2684"
 		}
 	},
-	"www.netflix.com": {
-		"description": "Netflix",
-		"mode": "white",
-		"params": [],
-		"author": "mitian233"
-	},
 	"www.nodeseek.com/": {
 		"jump": {
 			"description": "NodeSeek 外链",
@@ -1056,19 +591,6 @@
 			}
 		}
 	},
-	"www.right.com.cn/": {
-		"forum/": {
-			"forum.php": {
-				"description": "恩山无线论坛",
-				"mode": "black",
-				"params": [
-					"authorid",
-					"extra"
-				],
-				"author": "ous50"
-			}
-		}
-	},
 	"www.so.com/": {
 		"link": {
 			"description": "360 搜索外链",
@@ -1089,17 +611,6 @@
 			"author": "Meriel Varen"
 		}
 	},
-	"www.spigotmc.org": {
-		"description": "Spigotmc",
-		"mode": "regex",
-		"regex": [
-			"^https?://www\\.spigotmc\\.org/([^.]+)/([^.]+)\\.((?<=\\.)\\d+)"
-		],
-		"replace": [
-			"https://www.spigotmc.org/$1/$3"
-		],
-		"author": "jhqwqmc"
-	},
 	"www.tianyancha.com/": {
 		"security": {
 			"description": "天眼查外链",
@@ -1110,16 +621,6 @@
 			"author": "OldPanda"
 		}
 	},
-	"www.xiaohongshu.com/": {
-		"discovery/": {
-			"item": {
-				"description": "小红书",
-				"mode": "white",
-				"params": [],
-				"author": "RtYkk"
-			}
-		}
-	},
 	"www.youtube.com/": {
 		"redirect": {
 			"description": "YouTube 外链",
@@ -1128,14 +629,6 @@
 				"q"
 			],
 			"author": "OldPanda"
-		},
-		"watch": {
-			"description": "YouTube 一般链接",
-			"mode": "white",
-			"params": [
-				"v"
-			],
-			"author": "Mosney"
 		}
 	},
 	"www.yuque.com/": {
@@ -1148,26 +641,6 @@
 				],
 				"author": "OldPanda"
 			}
-		}
-	},
-	"www.zhihu.com/": {
-		"search": {
-			"description": "知乎搜索",
-			"mode": "white",
-			"params": [
-				"q",
-				"type",
-				"vertical",
-				"sort",
-				"time_interval"
-			],
-			"author": "PRO-2684"
-		},
-		"": {
-			"description": "知乎",
-			"mode": "white",
-			"params": [],
-			"author": "lz233"
 		}
 	},
 	"xie.infoq.cn/": {
@@ -1190,30 +663,6 @@
 			"author": "PRO-2684"
 		}
 	},
-	"y.music.163.com/": {
-		"m/": {
-			"song": {
-				"description": "网易云音乐",
-				"mode": "white",
-				"params": [
-					"id"
-				],
-				"author": "lz233"
-			}
-		}
-	},
-	"youtu.be": {
-		"description": "YouTube 分享短链",
-		"mode": "white",
-		"params": [],
-		"author": "Monsey"
-	},
-	"zhuanlan.zhihu.com": {
-		"description": "知乎文章",
-		"mode": "white",
-		"params": [],
-		"author": "TCOTC"
-	},
 	"/jump\\d*\\.bdimg\\.com/": {
 		"safecheck/": {
 			"index": {
@@ -1232,15 +681,6 @@
 				"url"
 			],
 			"author": "PRO-2684"
-		}
-	},
-	"/.+\\.list-manage\\.com/": {
-		"track/": {
-			"click": {
-				"description": "MailChimp",
-				"mode": "redirect",
-				"author": "PRO-2684"
-			}
 		}
 	}
 }

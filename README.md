@@ -7,12 +7,16 @@ Rules files for [pURLfy](https://github.com/PRO-2684/pURLfy).
 ## 📃 Files
 
 - [list.json](list.json): A list of all rule files.
-- [cn.json](cn.json): Chinese rules.
+- [tracking.json](tracking.json): Rules for purifying tracking links.
+- [outgoing.json](outgoing.json): Rules for purifying outgoing links.
+- [shortener.json](shortener.json): Rules for restoring shortened links.
 - [alternative.json](alternative.json): Redirects you from some websites to their better alternatives. Some rules are from [this script](https://greasyfork.org/scripts/483597).
     - Redirects you from [Fandom](https://www.fandom.com/) to [antifandom](https://antifandom.com/).
     - Redirects you from [Wikipedia](https://www.wikipedia.org/) to [Wikiwand](https://www.wikiwand.com/).
     - Redirects you from [Reddit](https://www.reddit.com/) to [Safe Reddit](https://safereddit.com/).
     - Redirects you from [Imgur](https://imgur.com/) to [Rimgo](https://rimgo.privacyredirect.com/).
+- [other.json](other.json): Rules for purifying other types of links.
+    - Shortens Spigotmc links.
 
 ## 🤔 Usage
 
