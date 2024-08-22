@@ -29,6 +29,16 @@
 			}
 		}
 	},
+	"afdian.com/": {
+		"link": {
+			"description": "爱发电外链",
+			"mode": "param",
+			"params": [
+				"target"
+			],
+			"author": "OldPanda"
+		}
+	},
 	"afdian.net/": {
 		"link": {
 			"description": "爱发电外链",
@@ -590,6 +600,15 @@
 				"author": "OldPanda"
 			}
 		}
+	},
+	"www.sixyin.com": {
+		"description": "六音外链",
+		"mode": "param",
+		"params": [
+			"golink"
+		],
+		"acts": ["base64"],
+		"author": "PRO-2684"
 	},
 	"www.so.com/": {
 		"link": {

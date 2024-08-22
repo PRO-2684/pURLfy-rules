@@ -274,7 +274,8 @@
 			"description": "哔哩哔哩视频",
 			"mode": "white",
 			"params": [
-				"t"
+				"t",
+				"p"
 			],
 			"author": "PRO-2684"
 		},
