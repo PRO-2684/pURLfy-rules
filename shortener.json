@@ -9,6 +9,13 @@
 		"mode": "redirect",
 		"author": "PRO-2684"
 	},
+	"dwz.cn/": {
+		"/\\w+": {
+			"description": "百度短网址",
+			"mode": "redirect",
+			"author": "PRO-2684"
+		}
+	},
 	"eepurl.com/": {
 		"/\\w+": {
 			"description": "EepURL Shortener",
@@ -64,6 +71,11 @@
 			"mode": "redirect",
 			"author": "PRO-2684"
 		}
+	},
+	"urlqh.cn": {
+		"description": "奇虎 360 短链",
+		"mode": "redirect",
+		"author": "PRO-2684"
 	},
 	"youtu.be": {
 		"description": "YouTube 分享短链",
