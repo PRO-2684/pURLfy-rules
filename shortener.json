@@ -44,6 +44,13 @@
 			"author": "PRO-2684"
 		}
 	},
+	"shorturl.at/": {
+		"/\\w+": {
+			"description": "ShortURL.at",
+			"mode": "redirect",
+			"author": "PRO-2684"
+		}
+	},
 	"t.cn/": {
 		"/\\w+": {
 			"description": "微博短链",
@@ -76,6 +83,20 @@
 		"description": "奇虎 360 短链",
 		"mode": "redirect",
 		"author": "PRO-2684"
+	},
+	"www.shorturl.at/": {
+		"/\\w+": {
+			"description": "ShortURL.at",
+			"mode": "redirect",
+			"author": "PRO-2684"
+		}
+	},
+	"wxurl.cn/": {
+		"/\\w+": {
+			"description": "WX 短网址",
+			"mode": "visit",
+			"author": "PRO-2684"
+		}
 	},
 	"youtu.be": {
 		"description": "YouTube 分享短链",
