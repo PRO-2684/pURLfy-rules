@@ -242,8 +242,10 @@
 			"/^\\d+$": {
 				"description": "百度贴吧",
 				"mode": "white",
-				"params": [],
-				"author": "青墨"
+				"params": [
+					"pn"
+				],
+				"author": "PRO-2684"
 			}
 		}
 	},
