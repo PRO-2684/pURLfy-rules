@@ -11,29 +11,33 @@
         "author": "PRO-2684"
     },
     "wikipedia.org/": {
-        "wiki": {
-            "description": "Wikipedia to Wikiwand (en)",
-            "mode": "regex",
-            "regex": [
-                "^https?://wikipedia\\.org/wiki/"
-            ],
-            "replace": [
-                "https://www.wikiwand.com/en/"
-            ],
-            "author": "PRO-2684"
+        "wiki/": {
+            "/.+": {
+                "description": "Wikipedia to Wikiwand (en)",
+                "mode": "regex",
+                "regex": [
+                    "^https?://wikipedia\\.org/wiki/([^?]*)$"
+                ],
+                "replace": [
+                    "https://www.wikiwand.com/en/articles/$1"
+                ],
+                "author": "PRO-2684"
+            }
         }
     },
     "/[^.]+\\.wikipedia\\.org/": {
-        "wiki": {
-            "description": "Wikipedia to Wikiwand (lang)",
-            "mode": "regex",
-            "regex": [
-                "^https?://([^.]+)\\.wikipedia\\.org/wiki/"
-            ],
-            "replace": [
-                "https://www.wikiwand.com/$1/"
-            ],
-            "author": "PRO-2684"
+        "wiki/": {
+            "/.+": {
+                "description": "Wikipedia to Wikiwand (lang)",
+                "mode": "regex",
+                "regex": [
+                    "^https?://([^.]+)\\.wikipedia\\.org/wiki/([^?]*)$"
+                ],
+                "replace": [
+                    "https://www.wikiwand.com/$1/articles/$2"
+                ],
+                "author": "PRO-2684"
+            }
         }
     },
     "www.reddit.com": {
