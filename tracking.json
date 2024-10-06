@@ -27,6 +27,19 @@
 			"author": "PRO-2684"
 		}
 	},
+	"chatglm.cn/": {
+		"video/": {
+			"share": {
+				"description": "智谱清言分享",
+				"mode": "white",
+				"params": [
+					"share_chat_id",
+					"lang"
+				],
+				"author": "PRO-2684"
+			}
+		}
+	},
 	"cn.bing.com/": {
 		"search": {
 			"description": "必应搜索",
@@ -243,7 +256,8 @@
 				"description": "百度贴吧",
 				"mode": "white",
 				"params": [
-					"pn"
+					"pn",
+					"see_lz"
 				],
 				"author": "PRO-2684"
 			}
