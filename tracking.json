@@ -28,9 +28,18 @@
 		}
 	},
 	"chatglm.cn/": {
+		"glmsShare": {
+			"description": "智谱清言对话分享",
+			"mode": "white",
+			"params": [
+				"share_conversation_id",
+				"lang"
+			],
+			"author": "PRO-2684"
+		},
 		"video/": {
 			"share": {
-				"description": "智谱清言分享",
+				"description": "智谱清言视频分享",
 				"mode": "white",
 				"params": [
 					"share_chat_id",

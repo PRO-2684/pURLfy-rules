@@ -9,6 +9,13 @@
 		"mode": "redirect",
 		"author": "PRO-2684"
 	},
+	"chatglm.cn/": {
+		"share": {
+			"description": "智谱清言分享短链",
+			"mode": "visit",
+			"author": "PRO-2684"
+		}
+	},
 	"dwz.cn/": {
 		"/\\w+": {
 			"description": "百度短网址",
